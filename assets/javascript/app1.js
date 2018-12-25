@@ -1,7 +1,7 @@
 
 function displayRecipe(){
-    var request = $('#search-input').val()
-    var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s="+'pork cassoulet';
+    var request = localStorage.getItem("dishName")
+    var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s="+ request;
     console.log(queryURL)
     $.ajax({
         url: queryURL,
