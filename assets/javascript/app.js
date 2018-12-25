@@ -13,13 +13,18 @@ function displayRecipe(){
             var imageDiv = $('<img style="height:75px" class="meal-image">')
             var nameDiv = $('<th class="name">')
             var descriptionDiv = $('<th class=description>')
+            var name = result[i].strMeal
+            var class1 = name.replace(/\s/g, '')
             imageDiv.attr('src', result[i].strMealThumb)
-            nameDiv.append(result[i].strMeal)
+            nameDiv.append(result[i].strMeal).attr('id', class1).attr('fullName', name)
+            $(document).on('click', '#' +class1, function() {
+                localStorage.setItem("dishName", $(this).attr('fullName'))
+                window.open('recipe.html', '_blank')
+            })
             descriptionDiv.append(result[i].strInstructions)
             descriptionDiv.text(descriptionDiv.text().substring(0,300))
             recipeLine.append(imageDiv).append(nameDiv).append(descriptionDiv)
             $('#result-table').append(recipeLine)
-
             var ingredients = [];
             for (var j = 1; j <= 20; j++) {
                 var ingredient = result[i][`strIngredient${j}`];
@@ -28,6 +33,7 @@ function displayRecipe(){
                 }
             }
             console.log(ingredients);
+            localStorage.setItem("request",request)
         }
     })
 }
