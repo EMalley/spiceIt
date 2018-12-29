@@ -21,54 +21,36 @@
 </head>
 
 <body>
-  <!-- Login Template -->
-  <!-- <script id= "loginTemplate" type= "text/template"> -->
-  <div class="container-fluid" Id="titleContainer">
-    <div class="row">
-      <div class="col-md-12">
-        <div Id="appName">
-          <h1>Spice It Up</h1>
-          <h2>Dinner is Served. <button id="loginBtn" type="submit">Sign Up</button><button id="loginBtn" type="submit">Login</button></h2>
+  <div id="page-content">
+    <div class="container-fluid" id="titleContainer">
+      <div class="row">
+        <div class="col-md-12 navigation-bar">
+          <div id="appName">
+            <h1 class="appName-line">Spice It Up</h1>
+            <h2 class="appName-line">Dinner is Served. <button class="loginBtn" type="submit">Sign Up</button><button class="loginBtn" type="submit">Login</button></h2>
+          </div>
+          <nav class="navbar searchBar">
+            <form class="form-inline">
+              <input class="form-control ml-sm-2" type="search" id="search-input" placeholder="Search Recipes" aria-label="Search">
+              <button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
+            </form>
+            <div class="ml-auto topbar-text">
+              <h4 class="topbar-sign">Dinner, Delivered</h4>
+              <h5 class="topbar-sign">Bringing the freshest ingredients to your door for a perfect homecooked meal.</h5>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mainContainer">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="result-table"></div>
         </div>
       </div>
     </div>
   </div>
-    <!-- Main content Divs -->
-          <div class="jumbotron">
-              <div class="row">
-                  <div class="col-md-12">
-                      I guess some stuff goes here... maybe the current selected recipe/ ingredients. 
-                      <div id="result-table"></div>
-                  </div>
-              </div>
-          </div>
-  <!-- Login information -->
-  <div class="container-fluid text-center">
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar">
-          <form class="form-inline">
-            <input class="form-control ml-sm-2" type="search" id="search-input" placeholder="Search Recipes" aria-label="Search">
-            <button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
-          </form>
-        </nav>
-        <div id="result-table"></div>
-      </div>
-    </div>
-  </div>
-  <!-- </script> -->
-
-  <!-- Main Content -->
-  <div class="container-fluid mainContainer">
-    <img id="coverPhoto" src="assets/images/Cover.png" alt="backgroundImg">
-    <div class="centered">
-      <h3>Dinner, Delivered</h3><br>
-      <h4>Bringing the freshest ingredients to your door for a perfect homecooked meal.</h4>
-    </div>
-  </div>
-  </div>
-  </div>
-
 <footer>
   Copyright by Spice-Boys Inc.
 </footer>

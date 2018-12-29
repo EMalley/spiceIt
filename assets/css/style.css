@@ -1,3 +1,16 @@
+body {
+    background: url('../images/Cover.png');
+    background-size: cover;
+    height: 100%;
+    margin:0;
+}
+html {
+    height: 100%;
+    margin:0;
+}
+#page-content {
+    min-height: 100%
+}
 #titleContainer {
     background-image:linear-gradient(to top right, #e4e4e4, #fff);
     background-repeat: none;
@@ -7,21 +20,35 @@
         color: #c06471
     }
     
-    #loginBtn {
+    .loginBtn {
         float: right;
-        margin:20px;
+        margin-right: 20px;
         font-size: 16px;
         outline: none;
-        
     }
-    
+    .navigation-bar {
+        padding-right:0px;
+        padding-left:0px
+    }
     .navbar {
         background-color: #c06471;
     }
-    
+    #appName,.searchBar {
+        padding-right: 30px;
+        padding-left: 30px
+    }
     #search-input {
         padding:20px;
         float:right
+    }
+
+    .topbar-sign {
+        text-align: right
+    }
+    .topbar-text {
+        float: left;
+        display: block;
+        width: 50%;
     }
     
     #coverPhoto {
@@ -51,6 +78,8 @@
         color: #e4e4e4;
         font-size: 12px;
         text-align: center;
+        height: 20px;
+        margin-top: -15px;
     }
     
     
