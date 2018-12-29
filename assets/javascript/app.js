@@ -42,6 +42,7 @@ $(document).ready(function() {
     $(document).on('click', '#search-btn', function(event) {
         event.preventDefault()
         displayRecipe()
+        $('#result-table').css('background-color', 'rgb(255,229,236,0.7)')
     })
 
 })

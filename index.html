@@ -21,45 +21,39 @@
 </head>
 
 <body>
-  <!-- Login Template -->
-  <!-- <script id= "loginTemplate" type= "text/template"> -->
-  <div class="container text-center my-3">
-    <div class="row">
-      <div class="col-md-12">
-        <div Id="appName text-center">
-          <h1>Spice It Recipes</h1>
+  <div id="page-content">
+    <div class="container-fluid" id="titleContainer">
+      <div class="row">
+        <div class="col-md-12 navigation-bar">
+          <div id="appName">
+            <h1 class="appName-line">Spice It Up</h1>
+            <h2 class="appName-line">Dinner is Served. <button class="loginBtn" type="submit">Sign Up</button><button class="loginBtn" type="submit">Login</button></h2>
+          </div>
+          <nav class="navbar searchBar">
+            <form class="form-inline">
+              <input class="form-control ml-sm-2" type="search" id="search-input" placeholder="Search Recipes" aria-label="Search">
+              <button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
+            </form>
+            <div class="ml-auto topbar-text">
+              <h4 class="topbar-sign">Dinner, Delivered</h4>
+              <h5 class="topbar-sign">Bringing the freshest ingredients to your door for a perfect homecooked meal.</h5>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mainContainer">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="result-table"></div>
         </div>
       </div>
     </div>
   </div>
-    <!-- Main content Divs -->
-          <div class="jumbotron">
-              <div class="row">
-                  <div class="col-md-12">
-                      I guess some stuff goes here... maybe the current selected recipe/ ingredients. 
-                      <div id="result-table"></div>
-                  </div>
-              </div>
-          </div>
-  <!-- Login information -->
-  <div class="container text-center my-3">
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar">
-          <form class="form-inline">
-            <input class="form-control ml-sm-2" type="search" id="search-input" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
-          </form>
-          <button id="loginBtn " type="submit">Login/Signup</button>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <!-- </script> -->
-
-  <!-- Multiple Recipes -->
-
+<footer>
+  Copyright by Spice-Boys Inc.
+</footer>
 </body>
 
 </html>

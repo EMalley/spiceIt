@@ -1,0 +1,88 @@
+body {
+    background: url('../images/Cover.png');
+    background-size: cover;
+    height: 100%;
+    margin:0;
+}
+html {
+    height: 100%;
+    margin:0;
+}
+#page-content {
+    min-height: 100%
+}
+#titleContainer {
+    background-image:linear-gradient(to top right, #e4e4e4, #fff);
+    background-repeat: none;
+    }
+    
+    h1, h2 {
+        color: #c06471
+    }
+    
+    .loginBtn {
+        float: right;
+        margin-right: 20px;
+        font-size: 16px;
+        outline: none;
+    }
+    .navigation-bar {
+        padding-right:0px;
+        padding-left:0px
+    }
+    .navbar {
+        background-color: #c06471;
+    }
+    #appName,.searchBar {
+        padding-right: 30px;
+        padding-left: 30px
+    }
+    #search-input {
+        padding:20px;
+        float:right
+    }
+
+    .topbar-sign {
+        text-align: right
+    }
+    .topbar-text {
+        float: left;
+        display: block;
+        width: 50%;
+    }
+    
+    #coverPhoto {
+        background-repeat: none;
+        width: 100%;
+    }
+    
+    /* main Container Div */
+    #mainContainer {
+        position: relative;
+        text-align: center;
+        color:#fff
+    }
+    
+    .centered {
+        -webkit-text-stroke: .5px #000;
+        color:#fff;
+        position: absolute;
+        top: 50%;
+        left:60%;
+        transform:translate(-50% , -50%)
+    }
+    
+    /* footer */
+    footer {
+        background-color: #8b8b8b;
+        color: #e4e4e4;
+        font-size: 12px;
+        text-align: center;
+        height: 20px;
+        margin-top: -15px;
+    }
+    
+    
+    
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.50); */
+    
