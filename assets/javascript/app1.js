@@ -1,6 +1,6 @@
 
 function displayRecipe(){
-    var request = localStorage.getItem("dishName")
+    var request = sessionStorage.getItem("dishName")
     var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s="+ request;
     console.log(queryURL)
     $.ajax({
@@ -30,7 +30,6 @@ function displayRecipe(){
                 }
             }
             $('#ingredients').html('<strong>Ingredients: </strong>'+ingredientsDisplay)
-            
             var amazonJson = {
                 "ingredients": []
             }
@@ -44,7 +43,7 @@ function displayRecipe(){
                       },
                       {
                         "unit": "KILOGRAMS",
-                        "amount": 0.1
+                        "amount": 0.001
                       }
                     ]
                   }
@@ -53,7 +52,7 @@ function displayRecipe(){
                 ingredientJSON[`name`] = productName
                 amazonJson.ingredients.push(ingredientJSON)
             }
-            $('#amazon-input').val(JSON.stringify(amazonJson))
+            $('#amazon-input').val(JSON.stringify(amazonJson))        
     })
 }
     

@@ -16,10 +16,22 @@ html {
     background-repeat: none;
     }
     
-    h1, h2 {
-        color: #c06471
+    h1 {
+        font-family: "Avant Garde", sans-serif;
+        font-size: 50px;
+        color: rgb(186,94,107);
+        text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      
+      0 6px 10px rgba(0, 0, 0, 0.9);
     }
-    
+    a {
+        color: black
+    }
     .loginBtn {
         float: right;
         margin-right: 20px;
@@ -31,11 +43,19 @@ html {
         padding-left:0px
     }
     .navbar {
-        background-color: #c06471;
+        background-color: rgb(245,184,197,0.4);
+        border-bottom: ridge rgb(245,184,197) 2px;
+        border-top: ridge rgb(245,184,197) 2px
     }
     #appName,.searchBar {
         padding-right: 30px;
         padding-left: 30px
+    }
+    #appName {
+        background-color: rgb(245,184,197,0.2)
+    }
+    .appName-line {
+        margin-bottom:0
     }
     #search-input {
         padding:20px;
@@ -57,10 +77,8 @@ html {
     }
     
     /* main Container Div */
-    #mainContainer {
-        position: relative;
-        text-align: center;
-        color:#fff
+    .mainContainer {
+        background-color: rgb(255,229,236,0.8);
     }
     
     .centered {
@@ -82,7 +100,76 @@ html {
         margin-top: -15px;
     }
     
-    
+    /* recipe page */
+    .recipe {
+        padding:15px;
+        font-size:25px;
+        text-align: center
+    }
+    #recipe-name {
+        color: rgb(129,129,255);
+        font-size: 65px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .pic-row {
+        display: inline-block;
+        text-align:center; 
+        justify-content: center;
+    }
+    #food-pic {
+        display: inline-block;
+        border-radius: 50px;
+        border: black groove 3px;
+        max-width: 97%;
+    }
+    .recipe-text {
+        font-weight: 500
+    }
+    #amazon-btn {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        margin-top: 20px;
+        font-weight: 600;
+        max-width: 100%
+    }
+    .clear {
+        clear: right;
+    }
     
     /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.50); */
-    
+    @media only screen and (max-width: 968px) {
+        #phrase {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .topbar-text {
+            font-size: 20px;
+            width: auto
+        }
+        #spiceItUp {
+            text-align: center
+        }
+        #dinner {
+            display: none
+        }
+    }
+    @media only screen and (max-width: 670px) {
+        #dinnerDelivered {
+            display: none;
+        }
+        .searchBar {
+            display: flex;
+            justify-content: center;
+        }
+        #search-input {
+            display: inline-block;
+            width: auto;
+            vertical-align: middle;
+            }
+    }
+    @media only screen and (max-width: 596px) {
+        .topbar-text {
+            display: none;
+        }
+    }
