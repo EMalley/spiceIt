@@ -54,7 +54,6 @@ var logoTimeline = anime.timeline;
 var searchBtn = document.querySelector("#search-btn");
 searchBtn.addEventListener('click', function(){
     console.log("anime clicked, add animations here")
-<<<<<<< HEAD
     setTimeout(function(){
     var results = anime({
         targets: '.meal-card',
@@ -62,16 +61,6 @@ searchBtn.addEventListener('click', function(){
         duration: 7000
     })
 },500)
-=======
-    var results = anime.timeline;
-    results({
-        targets:'.meal-img',
-        scale:[0 , 1],
-        loop:false,
-        easing: 'linear',
-        duration:5000,
-    })
->>>>>>> master
 })
 
 
