@@ -1,88 +1,249 @@
 body {
-    background: url('../images/Cover.png');
-    background-size: cover;
-    height: 100%;
-    margin:0;
+  background: url('../images/Background1.png');
+  background-size: cover;
+  height: 100%;
+  margin: 0;
 }
 html {
-    height: 100%;
-    margin:0;
+  height: 100%;
+  margin: 0;
 }
 #page-content {
-    min-height: 100%
+  min-height: 100%;
 }
 #titleContainer {
-    background-image:linear-gradient(to top right, #e4e4e4, #fff);
-    background-repeat: none;
-    }
-    
-    h1, h2 {
-        color: #c06471
-    }
-    
-    .loginBtn {
-        float: right;
-        margin-right: 20px;
-        font-size: 16px;
-        outline: none;
-    }
-    .navigation-bar {
-        padding-right:0px;
-        padding-left:0px
-    }
-    .navbar {
-        background-color: #c06471;
-    }
-    #appName,.searchBar {
-        padding-right: 30px;
-        padding-left: 30px
-    }
-    #search-input {
-        padding:20px;
-        float:right
-    }
+  background-image: linear-gradient(to top right, #e4e4e4, #fff);
+  background-repeat: none;
+}
 
-    .topbar-sign {
-        text-align: right
-    }
-    .topbar-text {
-        float: left;
-        display: block;
-        width: 50%;
-    }
-    
-    #coverPhoto {
-        background-repeat: none;
-        width: 100%;
-    }
-    
-    /* main Container Div */
-    #mainContainer {
-        position: relative;
-        text-align: center;
-        color:#fff
-    }
-    
-    .centered {
-        -webkit-text-stroke: .5px #000;
-        color:#fff;
-        position: absolute;
-        top: 50%;
-        left:60%;
-        transform:translate(-50% , -50%)
-    }
-    
-    /* footer */
-    footer {
-        background-color: #8b8b8b;
-        color: #e4e4e4;
-        font-size: 12px;
-        text-align: center;
-        height: 20px;
-        margin-top: -15px;
-    }
-    
-    
-    
-    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.50); */
-    
+h1 {
+  font-family: 'Avant Garde', sans-serif;
+  font-size: 50px;
+  color: rgb(123, 111, 136);
+  text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 10px rgba(0, 0, 0, 0.9);
+}
+a {
+  color: black;
+}
+#appName a:hover {
+  text-decoration: none
+}
+.loginBtn {
+  float: right;
+  margin-right: 20px;
+  font-size: 16px;
+  outline: none;
+}
+.navigation-bar {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border-bottom: ridge rgb(49, 44, 45) 2px;
+}
+#appName,
+.searchBar {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#appName {
+  background-color: rgba(136, 136, 136, 0.2);
+  border-bottom: ridge rgb(49, 44, 45) 2px;
+}
+#dinner {
+  font-size:30px
+}
+.appName-line {
+  margin-bottom: 0;
+  font-family:'Fugaz One', cursive;
+  font-style: italic;
+  font-size:64px
+}
+#it , #up{
+  padding:0;
+}
+#search-input {
+  margin-right: 35px;
+  padding: 20px;
+  float: right;
+}
+
+.topbar-sign {
+  text-align: right;
+}
+.topbar-text {
+  float: left;
+  display: block;
+  width: 66%;
+  font-family: 'Lato', sans-serif;
+}
+
+#coverPhoto {
+  background-repeat: none;
+  width: 100%;
+}
+
+/* main Container Div */
+.mainContainer {
+  background-color: rgba(184, 184, 184, 0.8);
+  margin-bottom: 40px;
+  padding-bottom: 20px
+}
+
+.centered {
+  -webkit-text-stroke: 0.5px #000;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.meal-card {
+  height: 32rem;
+  width: 20rem;
+  margin: 20px 5px 24px 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* footer */
+footer {
+  background-color: #8b8b8b;
+  color: #e4e4e4;
+  font-size: 12px;
+  text-align: center;
+  height: 20px;
+  margin-top: -15px;
+}
+
+/* recipe page */
+.recipe {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+#recipe-name {
+  color: rgb(129, 129, 255);
+  font-size: 65px;
+  display: inline-block;
+  vertical-align: top;
+}
+.pic-row {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+#food-pic {
+  display: inline-block;
+  border-radius: 50px;
+  border: black groove 3px;
+  max-width: 97%;
+}
+.recipe-text {
+  font-weight: 500;
+}
+#amazon-btn {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  margin-top: 20px;
+  font-weight: 600;
+  max-width: 100%;
+  background-color: #28A745;
+  color:white
+}
+.clear {
+  clear: right;
+}
+.video-row {
+  padding: 0 20px
+}
+.mealVideo {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+}
+/* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.50); */
+@media only screen and (max-width: 1024px) {
+  #ingredients1 {
+    display: none;
+  }
+  .mealVideo {
+    padding-bottom: 30%;
+}
+}
+@media only screen and (max-width: 992px) {
+  .mealVideo { 
+    padding-bottom: 56.25%;
+  }
+}
+@media only screen and (max-width: 968px) {
+  #phrase {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .topbar-text {
+    font-size: 20px;
+    width: auto;
+  }
+  #spiceItUp {
+    text-align: center;
+  }
+  #dinner {
+    display: none;
+  }
+  #ingredients1 {
+    display: inline;
+  }
+  #ingredients2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #dinnerDelivered {
+    display: none;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: center;
+  }
+  #search-input {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .appName-line {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 596px) {
+  .topbar-text {
+    display: none;
+  }
+  #search-input {
+    width: 60%;
+    margin-right: 35px
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #ingredients2 {
+    display: none;
+  }
+  .mealVideo {
+    padding-bottom: 30%;
+}
+}
+@media only screen and (min-width: 992px) {
+  .mealVideo {
+    padding-bottom: 30%;
+}
