@@ -7,7 +7,12 @@ instead of 'blah blah ' + (javascript expression/value) -> string concatenation 
 function createMealCard(mealId, imgSrc, name, desc) {
   var cardDiv = $('<div>', { 
     class: 'card meal-card',
+<<<<<<< HEAD
+    'data-mealId': mealId,
+    style: 'opacity:0'
+=======
     'data-mealId': mealId 
+>>>>>>> master
   });
   var imageDiv = $('<img>', { 
     class: 'meal-image w-100',
