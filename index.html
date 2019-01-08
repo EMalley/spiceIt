@@ -10,11 +10,18 @@
     crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lato" rel="stylesheet">
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+  <!-- anime CDN -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <!-- Anime.js Logic -->
+  <script type="text/javascript" defer src="assets/javascript/anime.js"></script>
   <!-- App Logic -->
   <script type="text/javascript" src="assets/javascript/app.js"></script>
   <title>Spice It Recipes</title>
@@ -26,8 +33,12 @@
       <div class="row">
         <div class="col-md-12 navigation-bar">
           <div id="appName">
-            <a href="index.html"><h1 class="appName-line" id="spiceItUp">Spice It Up</h1></a>
-            <h2 class="appName-line" id="dinner">Dinner is Served</h2>
+            <a class="spiceLink" href="index.html"><h1 class="appName-line" id="spiceItUp">
+              <span class=appName-line id="spice">Spice</span>
+              <span class=appName-line id="it"> It</span>
+              <span class=appName-line id="up"> Up</span>
+            </h1></a>
+            <h4 class="appName-line" id="dinner">Dinner is Served</h4>
           </div>
           <nav class="navbar searchBar">
             <form class="form-inline">

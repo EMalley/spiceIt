@@ -1,5 +1,5 @@
 body {
-  background: url('../images/Cover.png');
+  background: url('../images/Background1.png');
   background-size: cover;
   height: 100%;
   margin: 0;
@@ -19,7 +19,7 @@ html {
 h1 {
   font-family: 'Avant Garde', sans-serif;
   font-size: 50px;
-  color: rgb(186, 94, 107);
+  color: rgb(123, 111, 136);
   text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
     0 4px 0 #282828, 0 5px 0 #262626, 0 6px 10px rgba(0, 0, 0, 0.9);
 }
@@ -40,8 +40,10 @@ a {
   padding-left: 0px;
 }
 .navbar {
-  background-color: rgba(245, 184, 197, 0.4);
-  border-bottom: ridge rgb(245, 184, 197) 2px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border-bottom: ridge rgb(49, 44, 45) 2px;
 }
 #appName,
 .searchBar {
@@ -49,11 +51,20 @@ a {
   padding-left: 30px;
 }
 #appName {
-  background-color: rgba(245, 184, 197, 0.2);
-  border-bottom: ridge rgb(245, 184, 197) 2px;
+  background-color: rgba(136, 136, 136, 0.2);
+  border-bottom: ridge rgb(49, 44, 45) 2px;
+}
+#dinner {
+  font-size:30px
 }
 .appName-line {
   margin-bottom: 0;
+  font-family:'Fugaz One', cursive;
+  font-style: italic;
+  font-size:64px
+}
+#it , #up{
+  padding:0;
 }
 #search-input {
   padding: 20px;
@@ -66,7 +77,8 @@ a {
 .topbar-text {
   float: left;
   display: block;
-  width: 50%;
+  width: 66%;
+  font-family: 'Lato', sans-serif;
 }
 
 #coverPhoto {
@@ -76,7 +88,7 @@ a {
 
 /* main Container Div */
 .mainContainer {
-  background-color: rgba(255, 229, 236, 0.8);
+  background-color: rgba(184, 184, 184, 0.8);
   margin-bottom: 20px
 }
 
