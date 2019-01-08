@@ -67,6 +67,7 @@ a {
   padding:0;
 }
 #search-input {
+  margin-right: 35px;
   padding: 20px;
   float: right;
 }
@@ -89,7 +90,8 @@ a {
 /* main Container Div */
 .mainContainer {
   background-color: rgba(184, 184, 184, 0.8);
-  margin-bottom: 20px
+  margin-bottom: 40px;
+  padding-bottom: 20px
 }
 
 .centered {
@@ -220,6 +222,9 @@ footer {
     width: auto;
     vertical-align: middle;
   }
+  .appName-line {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 596px) {
   .topbar-text {
@@ -227,7 +232,7 @@ footer {
   }
   #search-input {
     width: 60%;
-    margin-right: 5px
+    margin-right: 35px
   }
 }
 @media only screen and (min-width: 1024px) {
