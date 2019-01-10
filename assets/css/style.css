@@ -19,16 +19,19 @@ html {
 h1 {
   font-family: 'Avant Garde', sans-serif;
   font-size: 50px;
-  color: rgb(123, 111, 136);
+  color: rgb(231, 34, 34);
+  /* background:linear-gradient(to right,  rgb(219, 118, 36), rgb(231, 34, 34)); */
   text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
     0 4px 0 #282828, 0 5px 0 #262626, 0 6px 10px rgba(0, 0, 0, 0.9);
 }
 a {
   color: black;
 }
+
 #appName a:hover {
   text-decoration: none
 }
+
 .loginBtn {
   float: right;
   margin-right: 20px;
@@ -45,27 +48,34 @@ a {
   opacity: 0.8;
   border-bottom: ridge rgb(49, 44, 45) 2px;
 }
+
 #appName,
 .searchBar {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
+
 #appName {
   background-color: rgba(136, 136, 136, 0.2);
   border-bottom: ridge rgb(49, 44, 45) 2px;
 }
+
 #dinner {
-  font-size:30px
+  font-size:30px;
+
 }
+
 .appName-line {
   margin-bottom: 0;
   font-family:'Fugaz One', cursive;
   font-style: italic;
   font-size:64px
 }
+
 #it , #up{
   padding:0;
 }
+
 #search-input {
   margin-right: 35px;
   padding: 20px;
@@ -86,6 +96,30 @@ a {
   background-repeat: none;
   width: 100%;
 }
+
+.btn-outline-success{
+  color:#fff;
+  border-color: #fff;
+}
+
+.btn-outline-success:hover{
+  box-shadow: 0 3px #5f5f5e;
+  top:2px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(3, 111, 126);
+  outline-color:  rgb(3, 111, 126);
+}
+
+.btn-outline-success:active{
+  box-shadow: 0 0 #5f5f5e;
+  top:5px;
+  color:#fff;
+  background-color:rgba(241, 68, 68, 0.815);
+  outline-color: none;
+}
+
+
+
 
 /* main Container Div */
 .mainContainer {
@@ -123,47 +157,74 @@ footer {
 .recipe {
   padding: 15px;
   font-size: 25px;
-  text-align: center;
 }
+
 #recipe-name {
-  color: rgb(129, 129, 255);
+  width:100%;
+  color: #15758d;
   font-size: 65px;
   display: inline-block;
   vertical-align: top;
+  text-align:center;
+  align-content: center;
 }
+
 .pic-row {
   display: inline-block;
   text-align: center;
-  justify-content: center;
+  justify-content: left;
 }
+
 #food-pic {
   display: inline-block;
   border-radius: 50px;
   border: black groove 3px;
   max-width: 97%;
 }
+
 .recipe-text {
-  font-weight: 500;
+  font-weight: 300;
+  font-family: 'Varela Round', sans-serif;
 }
+
 #amazon-btn {
+  float:left;
+  position: relative;
+  display:block;
   font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   margin-top: 20px;
   font-weight: 600;
   max-width: 100%;
-  background-color: #28A745;
-  color:white
+  background-color: rgb(3, 111, 126);
+  color:white;
+  box-shadow: 2px 5px #5f5f5e
 }
+
+#amazon-btn:hover{
+  box-shadow: 0 3px #5f5f5e;
+  top:2px;
+}
+
+#amazon-btn:active{
+  box-shadow: 0 0 #5f5f5e;
+  top:5px;
+}
+
 .clear {
   clear: right;
 }
+
 .video-row {
   padding: 0 20px
 }
+
 .mealVideo {
     position: relative;
+    margin-top:20px;
     width: 100%;
     height: 0;
 }
+
 .video {
     position: absolute;
     top: 0;
@@ -172,7 +233,6 @@ footer {
     height: 100%;
     max-height: 400px;
 }
-/* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.50); */
 @media only screen and (max-width: 1024px) {
   #ingredients1 {
     display: none;
@@ -246,4 +306,4 @@ footer {
 @media only screen and (min-width: 992px) {
   .mealVideo {
     padding-bottom: 30%;
-}
+}}
