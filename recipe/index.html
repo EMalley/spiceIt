@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <!-- anime CDN -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <!-- Anime.js Logic -->
+    <script type="text/javascript" defer src="../assets/javascript/anime.js"></script>
+    <!-- App Logic -->
+    <script type="text/javascript" src="../assets/javascript/app1.js"></script>
+    <link rel="icon" href="assets/images/SpiceItLogo.png">
+    <title>Spice It Recipes</title>
+  </head>
+
+<body>
+  <div id="page-content">
+    <div class="container-fluid" id="titleContainer">
+      <div class="row">
+        <div class="col-md-12 navigation-bar">
+          <div id="appName">
+            <a class="spiceLink" href="../index.html"><h1 class="appName-line" id="spiceItUp">
+                <img id="PsLogo" src="assets/images/SpiceItLogo.png" alt="" width="100" height="100">
+              <span class=appName-line id="spice">Spice</span>
+              <span class=appName-line id="it"> It</span>
+              <span class=appName-line id="up"> Up</span>
+            </h1></a>
+            <h2 class="appName-line" id="dinner">Dinner is Served</h2>
+          </div> 
+        </div>
+      </div>
+    </div>
+      <div class="container-fluid mainContainer">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+              <div id="result-table" class="recipe">
+                <h1 id="recipe-name"></h1>
+                <div class="recipe-text">
+                  <div id="recipe"></div>
+                </br>
+                  <div class="ingredients" id="ingredients1"></div>
+                  <div id="ingredients-cart"></div>
+                </div>
+                <form action="https://www.amazon.com/afx/ingredients/landing" method="POST" target="_blank">
+                  <input type="hidden" id="amazon-input" name="ingredients">
+                  <button class="btn btn-outline-success" id="amazon-btn" type="submit" value="submit">Shop with Amazon Fresh</button>
+                </form>
+              </div>
+            </div>
+            <div class="recipe col-lg-4 col-md-6 col-sm-12 pic-row">
+              <div class="ingredients" id="ingredients2"></div>
+                <img id="food-pic">
+            </div> 
+          </div>
+          <div class="row video-row">
+            <div class="col-lg-6 col-sm-12 mealVideo"></div>
+            <div class="col-lg-3 col-sm-0"></div>
+            <div class="col-lg-3 col-sm-0"></div>
+          </div>
+          
+          <div class="row clear"></div>
+      </div>
+      <footer>
+        Copyright by Spice-Boys Inc.
+      </footer>
+  <!-- </script> -->
+
+  <!-- Multiple Recipes -->
+
+</body>
+
+</html>
