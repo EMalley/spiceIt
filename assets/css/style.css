@@ -92,6 +92,8 @@ a {
   font-family: 'Lato', sans-serif;
 }
 
+
+
 #coverPhoto {
   background-repeat: none;
   width: 100%;
@@ -151,6 +153,52 @@ footer {
   text-align: center;
   height: 20px;
   margin-top: -15px;
+}
+
+.login-info{
+  float:right;
+  margin:5px;
+}
+
+#userEmail, #userPassword {
+  border-radius: 5px;
+  outline:none;
+
+}
+
+#btnSignUp, #btnLogin{
+  outline:none;
+  border-radius: 5px;
+  color:#000;
+  background-color:#fff;
+  border:2px solid  rgb(3, 111, 126);
+  box-shadow: 2px 4px #5f5f5e
+}
+
+#btnLogin:hover{
+  outline:none;
+  color:#fff;
+  background-color: rgb(3, 111, 126);
+  cursor: pointer;
+  box-shadow: 2px 2px #5f5f5e
+}
+
+#btnSignUp:hover{
+  outline:none;
+  color:#fff;
+  background-color: rgb(3, 111, 126);
+  cursor: pointer;
+  box-shadow: 2px 2px #5f5f5e
+}
+
+#btnSignUp:active{
+  box-shadow: 0 0 #5f5f5e;
+  top:5px;
+}
+
+#btnLogin:active{
+  box-shadow: 0 0 #5f5f5e;
+  top:5px;
 }
 
 /* recipe page */
@@ -250,25 +298,49 @@ footer {
   #phrase {
     display: none;
   }
+
+  .login-info{
+    display:inline-flex
+  }
+  #userEmail,#userPassword{
+    display:none
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .topbar-text {
     font-size: 20px;
     width: auto;
   }
+
   #spiceItUp {
     text-align: center;
   }
+
   #dinner {
     display: none;
   }
+
   #ingredients1 {
     display: inline;
   }
+
   #ingredients2 {
     display: none;
   }
+
+  #btnSignUp ,#btnLogin{
+    float:none;
+    display: inline-flex;
+    position: relative;
+    left:80%
+  }
+  
+  #userEmail,#userPassword{
+    display:none
+  }
 }
+
 @media only screen and (max-width: 670px) {
   #dinnerDelivered {
     display: none;
@@ -285,6 +357,12 @@ footer {
   .appName-line {
     font-size: 40px;
   }
+  #btnSignUp ,#btnLogin{
+    float:none;
+    display: inline-flex;
+    position: relative;
+    left:75%
+  }
 }
 @media only screen and (max-width: 596px) {
   .topbar-text {
@@ -293,6 +371,12 @@ footer {
   #search-input {
     width: 60%;
     margin-right: 35px
+  }
+  #btnSignUp ,#btnLogin{
+    float:none;
+    display: inline-flex;
+    position: relative;
+    left:40%
   }
 }
 @media only screen and (min-width: 1024px) {
