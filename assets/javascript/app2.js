@@ -10,8 +10,8 @@
       firebase.initializeApp(config);
       
 // Elements
-var txtEmail = document.getElementById('txtEmail');
-var txtPassword = document.getElementById('txtPassword');
+var userEmail = document.getElementById('userEmail');
+var userPassword = document.getElementById('userPassword');
 var btnLogin = document.getElementById('btnLogin');
 var btnSignUp = document.getElementById('btnSignUp');
 var btnLogout = document.getElementById('btnLogout');
@@ -24,8 +24,8 @@ var btnLogout = document.getElementById('btnLogout');
 // Log in button event
 btnLogin.addEventListener('click', e => {
     // Get email and password
-    var email = txtEmail.value;
-    var pass = txtPassword.value;
+    var email = userEmail.value;
+    var pass = userPassword.value;
     // Sign in
     var promise = firebase.auth().signInWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
@@ -41,8 +41,8 @@ btnLogin.addEventListener('click', e => {
 //Signup event
 btnSignUp.addEventListener('click', e => {
      // Get email and password
-     var email = txtEmail.value;
-     var password = txtPassword.value;
+     var email = userEmail.value;
+     var password = userPassword.value;
      // Sign in
      var promise = firebase.auth().createUserWithEmailAndPassword(email, password);
      promise.catch(e => console.log(e.message));
