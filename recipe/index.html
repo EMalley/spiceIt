@@ -13,6 +13,7 @@
     <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-database.js"></script>
@@ -25,6 +26,7 @@
     <script type="text/javascript" defer src="../assets/javascript/anime.js"></script>
     <!-- App Logic -->
     <script type="text/javascript" src="../assets/javascript/app1.js"></script>
+    <link rel="icon" href="assets/images/SpiceItLogo.png">
     <title>Spice It Recipes</title>
   </head>
 
@@ -35,6 +37,7 @@
         <div class="col-md-12 navigation-bar">
           <div id="appName">
             <a class="spiceLink" href="../index.html"><h1 class="appName-line" id="spiceItUp">
+              <img id="PsLogo" src="../assets/images/SpiceItLogo.png" alt="" width="100" height="100">
               <span class=appName-line id="spice">Spice</span>
               <span class=appName-line id="it"> It</span>
               <span class=appName-line id="up"> Up</span>
@@ -45,8 +48,8 @@
       </div>
     </div>
       <div class="container-fluid mainContainer">
-          <div class="row">
-            <div class="col-lg-8 col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
               <div id="result-table" class="recipe">
                 <h1 id="recipe-name"></h1>
                 <div class="recipe-text">
@@ -57,18 +60,18 @@
                 </div>
                 <form action="https://www.amazon.com/afx/ingredients/landing" method="POST" target="_blank">
                   <input type="hidden" id="amazon-input" name="ingredients">
-                  <button class="btn btn-outline-success" id="amazon-btn" type="submit" value="submit">Shop with amazon fresh</button>
+                  <button class="btn btn-outline-success" id="amazon-btn" type="submit" value="submit">Shop with Amazon Fresh</button>
                 </form>
               </div>
             </div>
             <div class="recipe col-lg-4 col-md-6 col-sm-12 pic-row">
+              <div class="ingredients" id="ingredients2"></div>
                 <img id="food-pic">
-                <div class="ingredients" id="ingredients2"></div>
             </div> 
           </div>
           <div class="row video-row">
-            <div class="col-lg-3 col-sm-0"></div>
             <div class="col-lg-6 col-sm-12 mealVideo"></div>
+            <div class="col-lg-3 col-sm-0"></div>
             <div class="col-lg-3 col-sm-0"></div>
           </div>
           
