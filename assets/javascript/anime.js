@@ -60,7 +60,7 @@ $(document).ready(function () {
     // after Search Btn Is clicked
     // ============================
     var searchBtn = document.querySelector("#search-btn");
-    searchBtn.addEventListener('click', function () {
+    $(document).on('click', '#search-btn', function () {
         console.log("anime clicked, add animations here")
         setTimeout(function () {
             var results = anime({
@@ -68,7 +68,7 @@ $(document).ready(function () {
                 opacity: [0, 1],
                 duration: 7000,
             })
-        }, 500)
+        }, 1000)
     })
 
 
@@ -86,11 +86,11 @@ $(document).ready(function () {
             opacity: [0, 1],
             duration: 500,
         })
-        .add({
-            targets: '#recipe , #ingredients',
-            scale: [.5, 1],
-            backgroundColor: '#444',
-        })
+        // .add({
+        //     targets: '#recipe , #ingredients',
+        //     scale: [.5, 1],
+        //     backgroundColor: '#444',
+        // })
 
     var recipeTimeline = anime.timeline;
     recipeTimeline({

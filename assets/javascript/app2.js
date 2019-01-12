@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
     var config = {
         apiKey: "AIzaSyD4NgBcKaPo0lBiNZ82dy8ZcFNb2U52fA0",
         authDomain: "spice-it-67e90.firebaseapp.com",
@@ -9,47 +9,42 @@
       };
       firebase.initializeApp(config);
       
-// Elements
-var userEmail = document.getElementById('userEmail');
-var userPassword = document.getElementById('userPassword');
-var btnLogin = document.getElementById('btnLogin');
-var btnSignUp = document.getElementById('btnSignUp');
-var btnLogout = document.getElementById('btnLogout');
-
-
 ///////////////////////////////////////////////////////////////
 //   \\         LOG INTO SPICEIT ACCOUNT         \\     //                      //                                                //
       ////////////////////////////////////////////////
 
 // Log in button event
-btnLogin.addEventListener('click', e => {
+$(document).on('click', '#btnLogin', function(e) {
     // Get email and password
-    var email = userEmail.value;
-    var pass = userPassword.value;
+    var email = $('#userEmail').val();
+    var password = $('#userPassword').val();
     // Sign in
-    var promise = firebase.auth().signInWithEmailAndPassword(email, pass);
+    var promise = firebase.auth().signInWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
-    
+    $('#userEmail').val('');
+    $('#userPassword').val('');
     
 
-});
+})
 
 ///////////////////////////////////////////////////////////////
 //   \\         SIGN UP FOR SPICEIT RECIPIES          \\     //                      //                                                //
       ////////////////////////////////////////////////
 
 //Signup event
-btnSignUp.addEventListener('click', e => {
+$(document).on('click', '#saveNew', function(e) {
      // Get email and password
-     var email = userEmail.value;
-     var password = userPassword.value;
+     console.log('sign up')
+     var email = $('#newEmail').val();
+     var password = $('#newPassword').val();
      // Sign in
      var promise = firebase.auth().createUserWithEmailAndPassword(email, password);
      promise.catch(e => console.log(e.message));
-        
+     $('#newEmail').val('');
+     $('#newPassword').val('');
 });
 
-btnLogout.addEventListener('click', e => {
+$(document).on('click', '#btnLogout', function() {
     firebase.auth().signOut();
 });
 
@@ -57,13 +52,15 @@ btnLogout.addEventListener('click', e => {
     //realtime listener
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
-            console.log(firebaseUser);
-            document.getElementById("btnLogout").style.display='block';
+            $('#userMail').html(firebaseUser.email);
+            $('#btnLogin,#btnNewAcc,#userEmail,#userPassword').hide()
+            $('#btnLogout,#userMail').show()
         } else {
             console.log('not logged in');
-            document.getElementById("btnLogout").style.display='none';
+            $('#btnLogin,#btnNewAcc,#userEmail,#userPassword').show()
+            $('#btnLogout,#userMail').hide()
         }
     });
-}());
+});
 
 
